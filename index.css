@@ -1,0 +1,25 @@
+
+nav img{
+    height: 60px;
+    width: 110px;
+    margin-left: -40px;
+}
+.footer{
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+}
+.footer-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; /* Ajusta la familia de la fuente a Arial como ejemplo */
+    font-weight: bold; /* Asegura que el texto sea negrita */
+    font-size: 17px;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: bold;
+    font-size: 17px;
+}
+
+

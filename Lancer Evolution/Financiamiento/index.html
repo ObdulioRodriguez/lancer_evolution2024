@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamiento - Mitsubishi Lancer Evolution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-image: url(logo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 300px;
+            height: 50vh;
+            max-height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+            font-family: 'Poppins', sans-serif;
+        }
+        @media (max-width: 576px) {
+            .hero-section {
+                min-height: 200px;
+            }
+            .hero-section h1.display-4 {
+                font-size: 2rem;
+            }
+            .hero-section p.lead {
+                font-size: 1rem;
+            }
+        }
+        h1.display-4 {
+            font-weight: 700;
+        }
+        p.lead {
+            font-weight: 400;
+        }
+        .footer {
+            font-size: 15px;
+            background-color: rgb(0, 0, 0);
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+        .footer-link {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .footer-link:hover {
+            color: rgba(0, 107, 168, 0.8);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4">Financiamiento Mitsubishi Lancer Evolution</h1>
+            <p class="lead">Haz realidad tu sueño de conducir un Lancer Evolution</p>
+        </div>
+    </section>
+
+    <!-- Calculadora de Financiamiento -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4"><b>Calcula tu Financiamiento</b></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="precio" class="form-label">Precio del vehículo</label>
+                            <input type="number" class="form-control" id="precio" placeholder="Ingresa el precio">
+                        </div>
+                        <div class="mb-3">
+                            <label for="enganche" class="form-label">Enganche</label>
+                            <input type="number" class="form-control" id="enganche" placeholder="Ingresa el enganche">
+                        </div>
+                        <div class="mb-3">
+                            <label for="plazo" class="form-label">Plazo (meses)</label>
+                            <select class="form-select" id="plazo">
+                                <option value="12">12 meses</option>
+                                <option value="24">24 meses</option>
+                                <option value="36">36 meses</option>
+                                <option value="48">48 meses</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-outline-info" style="width: 100px;">Calcular</button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes de Financiamiento -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4"><b>Nuestros Planes de Financiamiento</b></h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Plan Básico</h5>
+                            <p class="card-text">Financiamiento a 24 meses con tasa preferencial.</p>
+                            <a href="#" class="btn btn-outline-primary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Plan Intermedio</h5>
+                            <p class="card-text">Financiamiento a 36 meses con seguro incluido.</p>
+                            <a href="#" class="btn btn-outline-primary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Plan Premium</h5>
+                            <p class="card-text">Financiamiento a 48 meses con mantenimiento incluido.</p>
+                            <a href="#" class="btn btn-outline-primary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4"><b>Solicita más Información</b></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-secondary">Enviar Solicitud</button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-white py-4">
+        <div class="container">
+            <!-- Primera fila: Enlaces de políticas -->
+            <div class="row mb-3">
+                <div class="col-12 col-lg mb-2">
+                    <a href="#" class="footer-link">Política de Privacidad</a>
+                </div>
+                <div class="col-12 col-lg mb-2">
+                    <a href="#" class="footer-link">Términos y Condiciones</a>
+                </div>
+                <div class="col-12 col-lg mb-2">
+                    <a href="#" class="footer-link">Configuración de Cookies</a>
+                </div>
+                <div class="col-12 col-lg mb-2">
+                    <a href="#" class="footer-link">Política de Cookies</a>
+                </div>
+            </div>
+            
+            <!-- Segunda fila: Derechos reservados e iconos de redes sociales -->
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-auto mb-3 mb-md-0">
+                    <p class="mb-0">2024. Todos los Derechos Reservados ®</p>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <a href="https://www.facebook.com" class="footer-link me-3">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.whatsapp.com" class="footer-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
